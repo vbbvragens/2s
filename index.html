@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thema 2 - Vragens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+             <!-- Favicon Ekleme -->
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/internet-security-vol-1-filled/32/left-indent_indent_align_alignment-512.png"/>
+</head>
+<body>
+
+</head>
+<body>
+
+<button class="toggle-button" id="toggleButton">Dark Mode</button>
+
+<h1>Thema 2 - Vragens</h1>
+
+<div class="section" id="vragen">
+    <!-- Vragen hier -->
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
+    <div class="btn">
+        <a href="https://vbbvragens.github.io/startpagina/">Terug naar Startpagina</a>
+    </div>
+</div>
+
+<button class="toggle-sidebar" id="toggleSidebar">Vragenlijst</button>
+<div class="sidebar" id="sidebar">
+    <h3 style="text-align: center;">Vragenlijst</h3>
+    <div class="number-container" id="numberContainer"></div>
+    <button id="showAllQuestions" class="show-all-button">Toon Alle Vragen</button>
+</div>
+
+<div class="sidebar" id="sidebar">
+    <h3 style="text-align: center;">Vragenlijst</h3>
+    <div class="number-container" id="numberContainer"></div>
+    <button id="showAllQuestions" class="show-all-button">Toon Alle Vragen</button>
+</div>
+
+    <div class="section" id="vragen">
+    <div class="question">
+    <h3>1. Wat is de belangrijkste taak van een objectbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(1, 'A', this)">A) Het bewaken van een persoonlijke VIP</button>
+    <button class="button" onclick="checkAnswer(1, 'B', this)">B) Het beveiligen van één specifiek object</button>
+    <button class="button" onclick="checkAnswer(1, 'C', this)">C) Het uitvoeren van onderzoeken</button>
+    <button class="button" onclick="checkAnswer(1, 'D', this)">D) Het geven van eerste hulp</button>
+    <div id="result1" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>2. Hoeveel uur per week werken objectbeveiligers doorgaans?</h3>
+    <button class="button" onclick="checkAnswer(2, 'A', this)">A) 20 uur</button>
+    <button class="button" onclick="checkAnswer(2, 'B', this)">B) 40 uur</button>
+    <button class="button" onclick="checkAnswer(2, 'C', this)">C) Variabel, afhankelijk van de klant</button>
+    <button class="button" onclick="checkAnswer(2, 'D', this)">D) 10 uur</button>
+    <div id="result2" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>3. Wat is een belangrijke taak van een complexbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(3, 'A', this)">A) Toegangscontrole op evenementen</button>
+    <button class="button" onclick="checkAnswer(3, 'B', this)">B) Begeleiden van VIP's</button>
+    <button class="button" onclick="checkAnswer(3, 'C', this)">C) Controleren van identiteitsbewijzen van bezoekers</button>
+    <button class="button" onclick="checkAnswer(3, 'D', this)">D) Rijden in een surveillancemiddel</button>
+    <div id="result3" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>4. Wat is een vereiste voor het worden van een evenementbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(4, 'A', this)">A) Diploma Beveiliger van de SVPB of gelijkwaardig</button>
+    <button class="button" onclick="checkAnswer(4, 'B', this)">B) Diploma verkeer en veiligheid</button>
+    <button class="button" onclick="checkAnswer(4, 'C', this)">C) Ervaring in de horeca</button>
+    <button class="button" onclick="checkAnswer(4, 'D', this)">D) Opleiding in criminologie</button>
+    <div id="result4" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>5. Welke van de volgende beweringen over de persoonsbeveiliger is waar?</h3>
+    <button class="button" onclick="checkAnswer(5, 'A', this)">A) Zij beschermen gebouwen.</button>
+    <button class="button" onclick="checkAnswer(5, 'B', this)">B) Zij beveiligen alleen evenementen.</button>
+    <button class="button" onclick="checkAnswer(5, 'C', this)">C) Zij beschermen individuen tegen directe bedreigingen.</button>
+    <button class="button" onclick="checkAnswer(5, 'D', this)">D) Zij hebben geen diploma's nodig.</button>
+    <div id="result5" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>6. Wat zijn de hoofdtaken van de politie?</h3>
+    <button class="button" onclick="checkAnswer(6, 'A', this)">A) Detectives werk en opsporing</button>
+    <button class="button" onclick="checkAnswer(6, 'B', this)">B) Handhaven van de openbare orde, hulp verlenen, opsporen van strafbare feiten</button>
+    <button class="button" onclick="checkAnswer(6, 'C', this)">C) Receptietaken en beveiliging</button>
+    <button class="button" onclick="checkAnswer(6, 'D', this)">D) Evenementbeheer</button>
+    <div id="result6" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>7. Wat is het verschil tussen een algemeen opsporingsambtenaar en een buitengewoon opsporingsambtenaar (boa)?</h3>
+    <button class="button" onclick="checkAnswer(7, 'A', this)">A) Een boa heeft meer bevoegdheden</button>
+    <button class="button" onclick="checkAnswer(7, 'B', this)">B) Een politieagent is een boa</button>
+    <button class="button" onclick="checkAnswer(7, 'C', this)">C) Een algemeen opsporingsambtenaar kan alle strafbare feiten opsporen</button>
+    <button class="button" onclick="checkAnswer(7, 'D', this)">D) Een boa kan geen boetes uitschrijven</button>
+    <div id="result7" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>8. Welke functie valt onder de buitengewone opsporingsambtenaren?</h3>
+    <button class="button" onclick="checkAnswer(8, 'A', this)">A) Brandweerman</button>
+    <button class="button" onclick="checkAnswer(8, 'B', this)">B) Politieagent</button>
+    <button class="button" onclick="checkAnswer(8, 'C', this)">C) Parkeercontroleur</button>
+    <button class="button" onclick="checkAnswer(8, 'D', this)">D) Militaire politie</button>
+    <div id="result8" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>9. Wat is een van de hoofdtaken van een evenementenbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(9, 'A', this)">A) Het uitvoeren van onderzoeken</button>
+    <button class="button" onclick="checkAnswer(9, 'B', this)">B) Toegangscontrole en crowd control</button>
+    <button class="button" onclick="checkAnswer(9, 'C', this)">C) Receptiediensten</button>
+    <button class="button" onclick="checkAnswer(9, 'D', this)">D) Begeleiden van personen</button>
+    <div id="result9" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>10. Wat zijn belangrijke vaardigheden voor een mobiel surveillant?</h3>
+    <button class="button" onclick="checkAnswer(10, 'A', this)">A) Technische vaardigheden in computers</button>
+    <button class="button" onclick="checkAnswer(10, 'B', this)">B) Goede communicatieve vaardigheden en kennis van alarmsystemen</button>
+    <button class="button" onclick="checkAnswer(10, 'C', this)">C) Kookvaardigheden</button>
+    <button class="button" onclick="checkAnswer(10, 'D', this)">D) Creatieve schrijfvaardigheden</button>
+    <div id="result10" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>11. Welke organisatie is verantwoordelijk voor de Nederlandse brandweer?</h3>
+    <button class="button" onclick="checkAnswer(11, 'A', this)">A) Het gemeentebestuur</button>
+    <button class="button" onclick="checkAnswer(11, 'B', this)">B) Het ministerie van Justitie</button>
+    <button class="button" onclick="checkAnswer(11, 'C', this)">C) De Koninklijke Nederlandse Politie</button>
+    <button class="button" onclick="checkAnswer(11, 'D', this)">D) Het ministerie van Volksgezondheid</button>
+    <div id="result11" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>12. Wat is de taak van de bevelvoerder bij de brandweer?</h3>
+    <button class="button" onclick="checkAnswer(12, 'A', this)">A) Brandweermateriaal besturen</button>
+    <button class="button" onclick="checkAnswer(12, 'B', this)">B) Leidinggeven aan de brandweermensen tijdens een inzet</button>
+    <button class="button" onclick="checkAnswer(12, 'C', this)">C) Verantwoordelijk voor de opleidingsprogramma's</button>
+    <button class="button" onclick="checkAnswer(12, 'D', this)">D) Coördineren van sociale media-activiteiten</button>
+    <div id="result12" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>13. Hoeveel medewerkers heeft de brandweer in Nederland ongeveer?</h3>
+    <button class="button" onclick="checkAnswer(13, 'A', this)">A) 50.000</button>
+    <button class="button" onclick="checkAnswer(13, 'B', this)">B) 30.000</button>
+    <button class="button" onclick="checkAnswer(13, 'C', this)">C) 100.000</button>
+    <button class="button" onclick="checkAnswer(13, 'D', this)">D) 70.000</button>
+    <div id="result13" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>14. Wat is de rol van de Koninklijke Marechaussee?</h3>
+    <button class="button" onclick="checkAnswer(14, 'A', this)">A) Opleiden van brandweermensen</button>
+    <button class="button" onclick="checkAnswer(14, 'B', this)">B) Bewaken van de openbare orde bij evenementen</button>
+    <button class="button" onclick="checkAnswer(14, 'C', this)">C) Grenspolitie, tegengaan van terrorisme en drugssmokkel</button>
+    <button class="button" onclick="checkAnswer(14, 'D', this)">D) Ondersteuning bij interne onderzoeken</button>
+    <div id="result14" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>15. Wat is een taak van de brandwacht?</h3>
+    <button class="button" onclick="checkAnswer(15, 'A', this)">A) Verlenen van eerste hulp bij evenementen</button>
+    <button class="button" onclick="checkAnswer(15, 'B', this)">B) Toezicht houden op brandveiligheid</button>
+    <button class="button" onclick="checkAnswer(15, 'C', this)">C) Uitvoeren van verkeerscontroles</button>
+    <button class="button" onclick="checkAnswer(15, 'D', this)">D) Verkooppunt voor brandpreventieartikelen</button>
+    <div id="result15" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>16. Bij welke situatie zou je het alarmnummer 112 bellen?</h3>
+    <button class="button" onclick="checkAnswer(16, 'A', this)">A) Voor algemene vragen over gezondheid</button>
+    <button class="button" onclick="checkAnswer(16, 'B', this)">B) Bij brand of een levensbedreigende situatie</button>
+    <button class="button" onclick="checkAnswer(16, 'C', this)">C) Voor informatie over evenementen</button>
+    <button class="button" onclick="checkAnswer(16, 'D', this)">D) Om een klacht in te dienen</button>
+    <div id="result16" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>17. Wat betekent crowdcontrol in de evenementenbeveiliging?</h3>
+    <button class="button" onclick="checkAnswer(17, 'A', this)">A) Het aanspreken van beveiligers</button>
+    <button class="button" onclick="checkAnswer(17, 'B', this)">B) Het begeleiden van VIP's</button>
+    <button class="button" onclick="checkAnswer(17, 'C', this)">C) Het handhaven van orde binnen de menigte</button>
+    <button class="button" onclick="checkAnswer(17, 'D', this)">D) Het controleren van toegangskaarten</button>
+    <div id="result17" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>18. Wat is een belangrijke eigenschap voor een persoonsbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(18, 'A', this)">A) Lichamelijke kracht</button>
+    <button class="button" onclick="checkAnswer(18, 'B', this)">B) Discretie</button>
+    <button class="button" onclick="checkAnswer(18, 'C', this)">C) Technische vaardigheden</button>
+    <button class="button" onclick="checkAnswer(18, 'D', this)">D) Kookvaardigheden</button>
+    <div id="result18" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>19. Welke functie vereist een certificaat als voetbalsteward?</h3>
+    <button class="button" onclick="checkAnswer(19, 'A', this)">A) Horecaportier</button>
+    <button class="button" onclick="checkAnswer(19, 'B', this)">B) Evenementbeveiliger</button>
+    <button class="button" onclick="checkAnswer(19, 'C', this)">C) Voetbalsteward</button>
+    <button class="button" onclick="checkAnswer(19, 'D', this)">D) Mobiele surveillant</button>
+    <div id="result19" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>20. Wat is de hoofdfunctie van de ambulanceverpleegkundige?</h3>
+    <button class="button" onclick="checkAnswer(20, 'A', this)">A) Voeren van administratieve taken</button>
+    <button class="button" onclick="checkAnswer(20, 'B', this)">B) Verlenen van medische zorg aan patiënten</button>
+    <button class="button" onclick="checkAnswer(20, 'C', this)">C) Besturen van de ambulance</button>
+    <button class="button" onclick="checkAnswer(20, 'D', this)">D) Begeleiden van brandweermensen</button>
+    <div id="result20" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>21. Op welke leeftijd moet je minimaal zijn om complexbeveiliger te worden?</h3>
+    <button class="button" onclick="checkAnswer(21, 'A', this)">A) 16 jaar</button>
+    <button class="button" onclick="checkAnswer(21, 'B', this)">B) 18 jaar</button>
+    <button class="button" onclick="checkAnswer(21, 'C', this)">C) 21 jaar</button>
+    <button class="button" onclick="checkAnswer(21, 'D', this)">D) 25 jaar</button>
+    <div id="result21" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>22. Wie is verantwoordelijk voor de coördinatie van verschillende bevelvoerders bij grote branden?</h3>
+    <button class="button" onclick="checkAnswer(22, 'A', this)">A) Burgemeester</button>
+    <button class="button" onclick="checkAnswer(22, 'B', this)">B) Officier van dienst</button>
+    <button class="button" onclick="checkAnswer(22, 'C', this)">C) Ambulanceverpleegkundige</button>
+    <button class="button" onclick="checkAnswer(22, 'D', this)">D) Beveiliger</button>
+    <div id="result22" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>23. Wat is een type van vervoer dat door ambulancediensten wordt uitgevoerd?</h3>
+    <button class="button" onclick="checkAnswer(23, 'A', this)">A) Groepsvervoer</button>
+    <button class="button" onclick="checkAnswer(23, 'B', this)">B) Begeleid vervoer</button>
+    <button class="button" onclick="checkAnswer(23, 'C', this)">C) A1-rit</button>
+    <button class="button" onclick="checkAnswer(23, 'D', this)">D) Dagelijks openbaar vervoer</button>
+    <div id="result23" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>24. Wat is de ISPS-code?</h3>
+    <button class="button" onclick="checkAnswer(24, 'A', this)">A) Een certificaat voor brandweermensen</button>
+    <button class="button" onclick="checkAnswer(24, 'B', this)">B) Veiligheidsvoorschriften voor zeeschepen en havens</button>
+    <button class="button" onclick="checkAnswer(24, 'C', this)">C) Een cursus voor beveiligers</button>
+    <button class="button" onclick="checkAnswer(24, 'D', this)">D) Een onderzoeksmethodologie</button>
+    <div id="result24" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>25. Wat is een taak van een ambulancechauffeur?</h3>
+    <button class="button" onclick="checkAnswer(25, 'A', this)">A) Medische diagnoses stellen</button>
+    <button class="button" onclick="checkAnswer(25, 'B', this)">B) De ambulance veilig vervoeren</button>
+    <button class="button" onclick="checkAnswer(25, 'C', this)">C) Het beheren van ziekenhuisbedden</button>
+    <button class="button" onclick="checkAnswer(25, 'D', this)">D) Het geven van voorlichting over gezondheid</button>
+    <div id="result25" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>26. Wat zijn de hoofdtaken van de politie?</h3>
+    <button class="button" onclick="checkAnswer(26, 'A', this)">A) Detectives werk en opsporing</button>
+    <button class="button" onclick="checkAnswer(26, 'B', this)">B) Handhaven van de openbare orde, hulp verlenen, opsporen van strafbare feiten</button>
+    <button class="button" onclick="checkAnswer(26, 'C', this)">C) Receptietaken en beveiliging</button>
+    <button class="button" onclick="checkAnswer(26, 'D', this)">D) Evenementbeheer</button>
+    <div id="result26" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>27. Wat zijn belangrijke vaardigheden voor een mobiel surveillant?</h3>
+    <button class="button" onclick="checkAnswer(27, 'A', this)">A) Technische vaardigheden in computers</button>
+    <button class="button" onclick="checkAnswer(27, 'B', this)">B) Goede communicatieve vaardigheden en kennis van alarmsystemen</button>
+    <button class="button" onclick="checkAnswer(27, 'C', this)">C) Kookvaardigheden</button>
+    <button class="button" onclick="checkAnswer(27, 'D', this)">D) Creatieve schrijfvaardigheden</button>
+    <div id="result27" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>28. Welke organisatie is verantwoordelijk voor de Nederlandse brandweer?</h3>
+    <button class="button" onclick="checkAnswer(28, 'A', this)">A) Het gemeentebestuur</button>
+    <button class="button" onclick="checkAnswer(28, 'B', this)">B) Het ministerie van Justitie</button>
+    <button class="button" onclick="checkAnswer(28, 'C', this)">C) De Koninklijke Nederlandse Politie</button>
+    <button class="button" onclick="checkAnswer(28, 'D', this)">D) Het ministerie van Volksgezondheid</button>
+    <div id="result28" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>29. Wat is de hoofdfunctie van de ambulanceverpleegkundige?</h3>
+    <button class="button" onclick="checkAnswer(29, 'A', this)">A) Voeren van administratieve taken</button>
+    <button class="button" onclick="checkAnswer(29, 'B', this)">B) Verlenen van medische zorg aan patiënten</button>
+    <button class="button" onclick="checkAnswer(29, 'C', this)">C) Besturen van de ambulance</button>
+    <button class="button" onclick="checkAnswer(29, 'D', this)">D) Begeleiden van brandweermensen</button>
+    <div id="result29" class="result"></div>
+</div>
+
+<div class="question">
+    <h3>30. Wat is een belangrijke eigenschap voor een persoonsbeveiliger?</h3>
+    <button class="button" onclick="checkAnswer(30, 'A', this)">A) Lichamelijke kracht</button>
+    <button class="button" onclick="checkAnswer(30, 'B', this)">B) Discretie</button>
+    <button class="button" onclick="checkAnswer(30, 'C', this)">C) Technische vaardigheden</button>
+    <button class="button" onclick="checkAnswer(30, 'D', this)">D) Kookvaardigheden</button>
+    <div id="result30" class="result"></div>
+</div>
+    </div>
+</div>
+
+<div class="score" id="score"></div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#vragenlijst').addEventListener('click', () => {
+                console.log('Vragenlijst tuşuna tıklanmış');
+                showAllQuestions();
+            });
+        });
+
+        function showAllQuestions() {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.style.display = 'block'; // Tüm soruları göster
+            });
+        }
+    </script>
+</body>
+</html>
